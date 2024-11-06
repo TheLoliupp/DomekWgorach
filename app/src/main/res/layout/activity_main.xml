@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Domek w gorach!"
+        android:textSize="24sp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/obraz"
+        android:scaleType="centerCrop"
+        android:paddingTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#008080">
+        <Button
+            android:id="@+id/buttonPolub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="POLUB"
+            android:backgroundTint="#008080"/>
+
+        <Button
+            android:id="@+id/buttonUsun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USUN"
+            android:backgroundTint="#008080"/>
+
+        <Button
+            android:id="@+id/buttonZapisz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ZAPISZ"
+            android:backgroundTint="#008080"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/liczbaPolubien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Polubien"
+        android:gravity="end"
+        android:paddingTop="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        android:paddingTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPIS"
+        android:textStyle="bold"
+        android:paddingTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+        android:textColor="#808080"
+        android:paddingTop="20dp"/>
+
+</LinearLayout>
